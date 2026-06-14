@@ -8,6 +8,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
   <style>
+    /*
+      Global page styles are kept inline to make this static site easy to
+      copy, open locally, and publish with GitHub Pages without a build step.
+    */
     *{
       margin:0;
       padding:0;
@@ -28,6 +32,7 @@
       font-weight:600;
     }
 
+    /* Hero: full-width opening section with a dark overlay for readable text. */
     .hero{
       height:85vh;
       background:
@@ -53,12 +58,14 @@
       max-width:700px;
     }
 
+    /* Main content wrapper that keeps cards centered and readable on wide screens. */
     .container{
       max-width:1100px;
       margin:auto;
       padding:40px 20px;
     }
 
+    /* Reusable card component used for links, weather, packing, and itinerary days. */
     .card{
       background:white;
       border-radius:24px;
@@ -98,6 +105,7 @@
       margin-bottom:10px;
     }
 
+    /* Highlight box for addresses, travel notes, and activity details. */
     .info-box{
       background:#f0f6f3;
       border-left:5px solid #355e52;
@@ -111,6 +119,7 @@
       color:#a85b3d;
     }
 
+    /* Responsive grid: cards wrap automatically as available width changes. */
     .weather-grid{
       display:grid;
       grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
@@ -131,6 +140,7 @@
       margin-bottom:10px;
     }
 
+    /* Internal navigation buttons for jumping to major sections of the itinerary. */
     .quick-links{
       display:flex;
       flex-wrap:wrap;
@@ -151,6 +161,7 @@
       font-size:0.95rem;
     }
 
+    /* Mobile adjustments for smaller screens. */
     @media(max-width:768px){
 
       .hero h1{
@@ -175,6 +186,7 @@
 
 <body>
 
+  <!-- Hero / page introduction. Update this copy when the trip theme changes. -->
   <section class="hero">
     <h1>🌲 Platte River State Park</h1>
     <p>
@@ -185,7 +197,7 @@
 
   <div class="container">
 
-    <!-- QUICK LINKS -->
+    <!-- QUICK LINKS: keep href values aligned with the section ids below. -->
     <div class="card">
       <div class="content">
 
@@ -202,7 +214,7 @@
       </div>
     </div>
 
-    <!-- WEATHER -->
+    <!-- WEATHER: static expected forecast; update manually before each trip. -->
     <div class="card" id="weather">
       <div class="content">
 
@@ -236,7 +248,7 @@
       </div>
     </div>
 
-    <!-- PACKING -->
+    <!-- PACKING: practical checklist for the camping weekend. -->
     <div class="card" id="packing">
 
       <img src="images/waterfall.jpg">
@@ -260,7 +272,7 @@
       </div>
     </div>
 
-    <!-- SATURDAY -->
+    <!-- DAY 1: arrival itinerary. The id is kept for existing quick-link compatibility. -->
     <div class="card" id="saturday">
 
       <img src="images/tower.jpg">
@@ -314,7 +326,7 @@
       </div>
     </div>
 
-    <!-- SUNDAY -->
+    <!-- DAY 2: nature activities and food options. The id is kept for quick-link compatibility. -->
     <div class="card" id="sunday">
 
       <img src="images/forest.jpg">
@@ -369,7 +381,7 @@
       </div>
     </div>
 
-    <!-- MONDAY -->
+    <!-- DAY 3: departure plan. The id is kept for quick-link compatibility. -->
     <div class="card" id="monday">
 
       <img src="images/camping.jpg">
